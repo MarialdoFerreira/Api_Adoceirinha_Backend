@@ -1,8 +1,8 @@
-# Minha API
+# API Adoceirinha - Backend
 
-Este pequeno projeto faz parte do material diático da Disciplina **Desenvolvimento Full Stack Básico** 
+Este projeto estabelecer controles de uma confeitaria, onde fará o cadastro do portfólio de produtos, controle de produção, custos de fabricação e venda do produto de forma online. 
 
-O objetivo aqui é ilutsrar o conteúdo apresentado ao longo das três aulas da disciplina.
+Tem por objetivo subsidiar os gestores com informações de caracter gerencial, visando avaliar e estabelecer preços que façam frente a concorrência e que proporcionem continuidade e crescimento.
 
 ---
 ## Como executar 
@@ -14,7 +14,7 @@ Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal
 > É fortemente indicado o uso de ambientes virtuais do tipo [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html).
 
 ```
-(env)$ **pip install -r requirements.txt**
+(env)$ pip install -r requirements.txt
 ```
 
 Este comando instala as dependências/bibliotecas, descritas no arquivo `requirements.txt`.

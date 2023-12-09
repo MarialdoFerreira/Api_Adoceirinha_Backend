@@ -9,7 +9,7 @@ class DoceSchema(BaseModel):
     """ Define como um novo doce a ser inserido deve ser representado
     """
     descricao: str = "Cupcake"
-    genero: Optional[str] = "U"
+    genero: Optional[str] = "Unisex"
     categoria: str = "Bento Cake"
     valor_atual: float = 45.78
     imagem: Optional[str] = " "
@@ -56,7 +56,7 @@ class DoceViewSchema(BaseModel):
     """
     id: int = 1
     descricao: str = "Happy birthday"
-    genero: str = "U"
+    genero: str = "Unisex"
     categoria: str = "Bento cake"
     valor_atual: float = 55.00
     total_avaliacoes: int = 1

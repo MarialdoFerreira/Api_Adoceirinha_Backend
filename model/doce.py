@@ -12,7 +12,7 @@ class Doce(Base):
 
     id = Column("pk_doce", Integer, primary_key=True)
     descricao = Column(String(140), unique=True)
-    genero = Column(String(1))
+    genero = Column(String(10))
     imagem = Column(String(120))
     categoria = Column(String(30))
     valor_atual = Column(Float)

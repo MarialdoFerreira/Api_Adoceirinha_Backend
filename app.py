@@ -74,7 +74,7 @@ def add_doce(form: DoceSchema):
     try:
         # criando conexão com a base
         session = Session()
-        # adicionando produto
+        # adicionando doce
         session.add(doce)
         # efetivando o comando de adição do novo item na tabela
         session.commit()

@@ -1,91 +1,57 @@
-[2023-12-03 17:03:59,995] ERROR log_exception() L825  Exception on /doce [POST] - call_trace=/usr/local/lib/python3.10/dist-packages/flask/app.py L825 
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1455, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 869, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 867, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 852, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/usr/local/lib/python3.10/dist-packages/flask_openapi3/scaffold.py", line 117, in view_func
-    response = func(**func_kwargs)
-  File "/workspaces/Api_confeitaria_backend-master/app.py", line 56, in add_doce
-    imagem_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-NameError: name 'filename' is not defined
-[2023-12-03 17:04:00,092] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:04:00] "[35m[1mPOST /doce HTTP/1.1[0m" 500 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:04:10,337] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[2023-12-03 17:12:25,335] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://172.17.0.2:5000 - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:04:10,348] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:04:12,536] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:04:12] "[31m[1mPOST /doce HTTP/1.1[0m" 409 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:04:41,016] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[2023-12-03 17:12:25,422] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:12:33,533] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:12:33] "[31m[1mPOST /doce HTTP/1.1[0m" 409 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:12:47,131] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://172.17.0.2:5000 - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:04:41,023] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:04:49,757] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:04:49] "[33mGET /images/F_UTD4xWYAAdStq.jpg HTTP/1.1[0m" 404 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:04:49,902] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:04:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:05:54,408] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[2023-12-03 17:12:47,141] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:12:49,600] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:12:49] "[31m[1mPOST /doce HTTP/1.1[0m" 409 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:13:48,392] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://172.17.0.2:5000 - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:05:54,415] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:05:56,398] ERROR log_exception() L825  Exception on /images/F_UTD4xWYAAdStq.jpg [GET] - call_trace=/usr/local/lib/python3.10/dist-packages/flask/app.py L825 
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1455, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 869, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python3.10/dist-packages/flask_cors/extension.py", line 176, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 867, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 852, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/workspaces/Api_confeitaria_backend-master/app.py", line 35, in uploaded_file
-    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
-NameError: name 'send_from_directory' is not defined
-[2023-12-03 17:05:56,405] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:05:56] "[35m[1mGET /images/F_UTD4xWYAAdStq.jpg HTTP/1.1[0m" 500 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:06:28,442] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.17.0.2:5000 - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:06:28,453] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:06:30,365] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:06:30] "GET /images/F_UTD4xWYAAdStq.jpg HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:08:18,126] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.17.0.2:5000 - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:08:18,133] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:08:25,893] WARNING add_doce() L88   Erro ao adicionar doce 'dushaudhasudh', Não foi possível salvar novo doce :/ - call_trace=/workspaces/Api_confeitaria_backend-master/app.py L88  
-[2023-12-03 17:08:25,896] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:08:25] "[31m[1mPOST /doce HTTP/1.1[0m" 400 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:09:16,706] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.17.0.2:5000 - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:09:16,713] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:09:18,494] WARNING add_doce() L88   Erro ao adicionar doce 'dushaudhasudh', Não foi possível salvar novo doce :/ - call_trace=/workspaces/Api_confeitaria_backend-master/app.py L88  
-[2023-12-03 17:09:18,497] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:09:18] "[31m[1mPOST /doce HTTP/1.1[0m" 400 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:10:35,452] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.17.0.2:5000 - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:10:35,459] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:11:39,916] WARNING add_doce() L88   Erro ao adicionar doce 'dushaudhasudh', Não foi possível salvar novo doce :/ - call_trace=/workspaces/Api_confeitaria_backend-master/app.py L88  
-[2023-12-03 17:11:39,918] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:11:39] "[31m[1mPOST /doce HTTP/1.1[0m" 400 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:11:46,959] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.17.0.2:5000 - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:11:46,966] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:11:49,446] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:11:49] "[31m[1mPOST /doce HTTP/1.1[0m" 409 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:12:08,082] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.17.0.2:5000 - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:12:08,089] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
-[2023-12-03 17:12:12,288] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:12:12] "[31m[1mPOST /doce HTTP/1.1[0m" 409 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:13:48,403] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:13:51,533] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:13:51] "POST /doce HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:13:53,598] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:13:53] "GET /doces HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:14:24,733] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:14:24] "GET /doces HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:14:52,988] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:14:52] "GET /images/F_UTD4xWYAAdStq.jpg HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:08,473] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:08] "GET /doces HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:08,902] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:08] "GET /images/F_UTD4xWYAAdStq.jpg HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:08,956] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:08] "[33mGET /%20/minhas%20imagens HTTP/1.1[0m" 404 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:09,022] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:09] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:09,364] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:09] "[32mGET /openapi HTTP/1.1[0m" 308 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:09,669] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:09] "GET /openapi/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:47,654] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:47] "GET /doce?id=3 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:50,175] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:50] "OPTIONS /doce?descricao=Cupcake%20XXX HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:50,288] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:50] "POST /avaliacao HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:50,543] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:50] "DELETE /doce?descricao=Cupcake%20XXX HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:52,690] WARNING get_doce() L137  Erro ao buscar doce '3', Doce não encontrado na base :/ - call_trace=/workspaces/Api_confeitaria_backend-master/app.py L137 
+[2023-12-03 17:15:52,691] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:52] "[33mGET /doce?id=3 HTTP/1.1[0m" 404 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:53,887] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:53] "GET /doces HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:54,245] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:54] "[33mGET /%20/minhas%20imagens HTTP/1.1[0m" 404 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:54,283] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:54] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:54,578] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:54] "GET /openapi/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:55,324] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:55] "GET /doce?id=4 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:57,160] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:57] "OPTIONS /doce?descricao=Cupcake%20XXXX HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:57,261] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:57] "POST /avaliacao HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:57,543] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:57] "DELETE /doce?descricao=Cupcake%20XXXX HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:15:59,350] WARNING get_doce() L137  Erro ao buscar doce '4', Doce não encontrado na base :/ - call_trace=/workspaces/Api_confeitaria_backend-master/app.py L137 
+[2023-12-03 17:15:59,353] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:15:59] "[33mGET /doce?id=4 HTTP/1.1[0m" 404 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:00,370] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:00] "GET /doces HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:00,753] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:00] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:00,784] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:00] "[33mGET /%20/minhas%20imagens HTTP/1.1[0m" 404 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:01,061] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:01] "GET /openapi/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:25,143] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:25] "GET /doces HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:25,519] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:25] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:25,588] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:25] "[33mGET /%20/minhas%20imagens HTTP/1.1[0m" 404 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:25,647] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:25] "[36mGET /images/F_UTD4xWYAAdStq.jpg HTTP/1.1[0m" 304 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:25,903] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:25] "GET /openapi/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:27,077] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:27] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:27,147] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:27] "GET /doce?id=27 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:27,414] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:27] "GET /openapi/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:29,083] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:29] "GET /doces HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
+[2023-12-03 17:16:29,428] INFO _log() L96   127.0.0.1 - - [03/Dec/2023 17:16:29] "[33mGET /%20/minhas%20imagens HTTP/1.1[0m" 404 - - call_trace=/usr/local/lib/python3.10/dist-packages/werkzeug/_internal.py L96  
